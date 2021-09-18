@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Pictures</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <!-- *Loader -->
+    <div class="loader  hidden">
+        <img src="rocket.svg" alt="Rocket Loading Animation">
+        <h1>Loading</h1>
+    </div>
+    <!-- *Container -->
+    <div class="container">
+        <!-- *Navigation -->
+        <div class="navigation-container">
+            <span class="background"></span>
+            <!-- *Results Nav -->
+            <span class="navigation-items" id="results-nav">
+                <h3 class="clickable" onclick="updateDom('favorites')">Favorites</h3>
+                <h3>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</h3>
+                <h3 class="clickable" onclick="getNasaPictures()">Load More</h3>
+            </span>
+        <!-- *Favorites Nav -->
+        <span class="navigation-items hidden" id="favorites-nav">
+            <h3 class="clickable" onclick="getNasaPictures()">Load More NASA Images</h3>
+        </span>
+        </div>
+        <!-- *Images Container -->
+      <div class="images-container">
+          <!-- <div class="card">
+              <a href="" title="View Full Image" target="_blank">
+                  <img src="https://images.unsplash.com/photo-1539321908154-04927596764d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="NASA picture of the day" class="card-img-top">
+              </a>
+              <div class="body">
+                  <h5 class="card-title">Title of Images</h5>
+                  <p class="clickable">Add to Favorites</p>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum incidunt tenetur est aut suscipit porro reiciendis sed quaerat enim vel animi laborum ullam, non sint aspernatur consequuntur odio ex quasi libero dignissimos debitis deserunt! Accusantium quia, odit soluta aut quidem hic ea, ab et dolore labore magni quo blanditiis eos consequatur sapiente quod optio aperiam similique velit dicta quibusdam! Quis rem vel nam doloribus, et harum ipsam fugit quos officiis saepe quidem voluptate sunt quae modi eaque vitae inventore fugiat perferendis ratione voluptates amet beatae! Ducimus cumque quisquam quidem omnis minus, illo, adipisci facere assumenda, veniam eaque nesciunt vel aliquid.</p>
+
+                  <small class="text-muted">
+                    <strong>12-12-2021</strong>
+                    <span>Copyright Info</span>
+                  </small>
+              </div>
+          </div> -->
+      </div>
+    </div>
+    <!-- *Save Confirmation -->
+    <div class="save-confirmed" hidden>
+        <h1>ADDED!</h1>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
